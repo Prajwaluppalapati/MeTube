@@ -3,7 +3,7 @@ Hello coders, hack clubbers and everyone!
 Welcome to MeTube™
 
 MeTube is a funny version of YouTube. It is a "masterpiece" created by Prajwal Uppalapati
-Profile -> prajwaluppalapati.github.io/PrajDev
+Profile -> https://prajwaluppalapati.github.io/PrajDev
 
 I made this website with only 1% usage of AI :D
 -> I used AI to make the navbar's background blur.

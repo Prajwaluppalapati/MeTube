@@ -393,3 +393,118 @@ body{
         transform: rotate(360deg);
     }
 }
+
+.video_main_body{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 6%;
+}
+
+.video_frame{
+    width: 60%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+}
+
+.video_channel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: -2%;
+}
+
+.video_channel_img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.video_channel_right{
+    display: flex;
+    flex-direction: column;
+}
+
+.video_channel_right p{
+    margin-top: -15%;
+    color: rgb(156, 156, 156);
+    font-size: 14px;
+}
+
+.subscribe_btn{
+    background: white;
+    border: none;
+    color: black;
+    padding: 10px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.subscribe_btn:hover{
+    background: #e1e1e1;
+}
+
+.like_cnt{
+    background: rgba(89, 89, 89, 0.39);
+    border: none;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 15%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.like{
+    background: none;   
+    border: none;
+    border-right: solid rgba(255, 255, 255, 0.199) 2px;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 50px 0px 0px 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dislike{
+    background: none;   
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 0px 50px 50px 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dislike:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.like:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.share_btn{
+    background: rgba(89, 89, 89, 0.39);
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 13%;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.share_btn:hover{
+    background: rgba(255, 255, 255, 0.162);
+}

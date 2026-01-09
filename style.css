@@ -508,3 +508,68 @@ body{
 .share_btn:hover{
     background: rgba(255, 255, 255, 0.162);
 }
+
+.description_cnt{
+   width: 58%;
+   height: auto;
+   margin-top: 10px;
+   background: rgba(88, 88, 88, 0.5);
+   border-radius: 10px;
+   padding: 0.1% 1% 0.1% 1%;
+}
+
+.des_1{
+    color: white;
+    padding: 0;
+    font-size: 15px;
+}
+
+.des_1 p a{
+    text-decoration: none;
+    color: rgb(71, 71, 255);
+}
+
+.comment_textbox_cnt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.comment_profile_pic{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.comment_textbox{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.438);
+    color: white;
+    padding: 10px 0px;
+    width: 56%;
+    font-size: 14px;
+}
+
+.comment_textbox:focus{
+    outline: none;
+}
+
+.comments{
+    display: flex;
+    flex-direction: row;
+    width: 58%;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment_right{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment_right p{
+    margin-top: -20px;
+}

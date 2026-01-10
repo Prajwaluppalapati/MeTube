@@ -155,6 +155,25 @@ body{
     background: rgba(150, 150, 150, 0.479);
 }
 
+.main_settings{
+    width: 10%;
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s;
+    background: rgba(70, 70, 70, 0.479);
+    border: 1px solid blue;
+    border-radius: 50px;
+}
+
+.main_settings:hover{
+    color: rgb(0, 0, 255);
+    background: rgba(100, 100, 255, 0.2);
+}
+
 /** Profile Picture **/
 .profile_cnt{
     width: 20%;
@@ -613,6 +632,11 @@ body{
     height: 50px;
 }
 
+.shorts_btn p{
+    position: absolute;
+    margin-top: 70px;
+}
+
 .shorts_title_cnt{
     position: absolute;
     bottom: 20px;
@@ -940,6 +964,72 @@ body{
     text-decoration: none;
 } 
 
+.channelpage_body{
+    color: white;
+}
+
+.channelpage_main_cnt{
+    padding: 5% 0% 5% 10%;
+    width: 84%;
+}
+
+.channel_banner{
+    width: 104%;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.channelinfo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    gap: 20px;
+    align-items: center;
+}
+
+.channelinfo img{
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+}
+
+.channelinfo_right{
+    color: white;
+}
+
+.channelinfo_right .channelinfo_text{
+    margin-top: -20px;
+    color: rgb(181, 181, 181);
+}
+
+.channelinfo_subscribe_btn{
+    background: white;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+}
+
+.channelinfo_subscribe_btn:hover{
+    background: #e1e1e1;
+}
+
+.settingspage_body{
+    color: white;
+}
+
+.settings_main_cnt{
+    padding: 5% 10% 5% 10%;
+    width: 80%;
+}
+
+.checkbox{
+    color: white;
+    border: none;
+    height: 50px;
+}
 
 
 

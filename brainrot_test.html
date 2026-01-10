@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="https://videos.openai.com/vg-assets/assets%2Ftask_01k51m12v2ejqte5v5phbhdrcz%2F1757770018_img_1.webp?st=2025-09-13T12%3A00%3A05Z&se=2025-09-19T13%3A00%3A05Z&sks=b&skt=2025-09-13T12%3A00%3A05Z&ske=2025-09-19T13%3A00%3A05Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8b872fb2-b44b-4c1d-9ff6-1d4509d19e6e&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=dOKKa5ZnW9FcVXv9b3ACPKn24MmZL1KKP%2FFQYMqOE%2Fo%3D&az=oaivgprodscus" type="image/png">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>Brain rot zone | game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+</head>
+<body class="brainrot">
+  <div class="p3_main_div">
+    <div class="game_cnt">
+      
+      <button id="startBtn">Start Game</button>
+
+      <div id="quizArea" style="display:none;">
+        
+        <!-- Question 1 -->
+        <div class="quiz-page" id="q1">
+          <div class="question">How many hours do you spend on TikTok/shorts daily?</div>
+          <div class="options">
+            <button class="option" data-score="10">Less than 1 hour</button>
+            <button class="option" data-score="30">2–3 hours</button>
+            <button class="option" data-score="60">4+ hours 💀</button>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz-page" id="q2">
+          <div class="question">Do you say 'rizz' unironically?</div>
+          <div class="options">
+            <button class="option" data-score="0">Never</button>
+            <button class="option" data-score="30">Sometimes</button>
+            <button class="option" data-score="60">Everyday bro</button>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz-page" id="q3">
+          <div class="question">What's your fav meme format?</div>
+          <div class="options">
+            <button class="option" data-score="10">Classic memes</button>
+            <button class="option" data-score="40">Sigma edits</button>
+            <button class="option" data-score="70">Ohio brainrot</button>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="quiz-page" id="q4">
+          <div class="question">How often do you send “💀” instead of laughing?</div>
+          <div class="options">
+            <button class="option" data-score="10">Rarely</button>
+            <button class="option" data-score="30">Sometimes</button>
+            <button class="option" data-score="60">Every single time</button>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="quiz-page" id="q5">
+          <div class="question">Do you watch edits with loud bass-boosted music?</div>
+          <div class="options">
+            <button class="option" data-score="0">Nope</button>
+            <button class="option" data-score="30">Occasionally</button>
+            <button class="option" data-score="70">Every day 🔊</button>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="quiz-page" id="q6">
+          <div class="question">Your reaction when WiFi goes off?</div>
+          <div class="options">
+            <button class="option" data-score="10">Do something else</button>
+            <button class="option" data-score="40">Scroll mobile data instead</button>
+            <button class="option" data-score="70">Instant mental breakdown</button>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="quiz-page" id="q7">
+          <div class="question">Pick your favorite word:</div>
+          <div class="options">
+            <button class="option" data-score="10">Chill</button>
+            <button class="option" data-score="40">Skibidi</button>
+            <button class="option" data-score="70">Gyatt</button>
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="quiz-page" id="q8">
+          <div class="question">How many group chats are you in that spam memes?</div>
+          <div class="options">
+            <button class="option" data-score="10">1 or none</button>
+            <button class="option" data-score="40">2–3</button>
+            <button class="option" data-score="70">Too many to count 😵</button>
+          </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="quiz-page" id="q9">
+          <div class="question">Would you rather:</div>
+          <div class="options">
+            <button class="option" data-score="10">Read a book 📚</button>
+            <button class="option" data-score="40">Play video games 🎮</button>
+            <button class="option" data-score="70">Scroll reels endlessly 📱</button>
+          </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="quiz-page" id="q10">
+          <div class="question">Do you know all the lyrics of a TikTok trend song?</div>
+          <div class="options">
+            <button class="option" data-score="0">Nope</button>
+            <button class="option" data-score="30">Some parts</button>
+            <button class="option" data-score="70">Word for word 🎤</button>
+          </div>
+        </div>
+
+        <button id="nextBtn">Next</button>
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="watermark">Created by:<br>Prajwal Uppalapati</p>
+
+  <script>
+    const startBtn = document.getElementById("startBtn");
+    const quizArea = document.getElementById("quizArea");
+    const nextBtn = document.getElementById("nextBtn");
+    const resultDiv = document.getElementById("result");
+    const quizPages = document.querySelectorAll(".quiz-page");
+    const certificateSection = document.getElementById("certificateSection");
+    const goToCertBtn = document.getElementById("goToCertBtn");
+
+    let currentQ = 0;
+    let totalScore = 0;
+    let finalPercentage = 0;
+
+    startBtn.onclick = () => {
+      startBtn.style.display = "none";
+      quizArea.style.display = "block";
+      showQuestion(currentQ);
+    };
+
+    function showQuestion(index) {
+      quizPages.forEach((page, i) => {
+        page.style.display = (i === index ? "block" : "none");
+      });
+      nextBtn.style.display = "none";
+    }
+
+    document.querySelectorAll(".option").forEach(btn => {
+      btn.addEventListener("click", () => {
+        totalScore += parseInt(btn.getAttribute("data-score"));
+        nextBtn.style.display = "inline-block";
+      });
+    });
+
+    nextBtn.onclick = () => {
+      currentQ++;
+      if (currentQ < quizPages.length) {
+        showQuestion(currentQ);
+      } else {
+        showResult();
+      }
+    };
+
+    function showResult() {
+      quizPages.forEach(page => page.style.display = "none");
+      nextBtn.style.display = "none";
+      let maxScore = 60+60+70+60+70+70+70+70+70+70;
+      finalPercentage = Math.round((totalScore / maxScore) * 100);
+      let category = finalPercentage < 30 ? "Safe 🧠" :
+                     finalPercentage < 70 ? "Mild Rot 🥴" : "Full Rot 🧟";
+      resultDiv.innerHTML = `Your Brainrot level: <b>${finalPercentage}%</b><br>${category}`;
+      certificateSection.style.display = "block";
+    }
+
+    goToCertBtn.onclick = () => {
+      const name = document.getElementById("userName").value.trim();
+      if (!name) {
+        alert("Please enter your name first!");
+        return;
+      }
+      window.location.href = `certificate.html?name=${encodeURIComponent(name)}&score=${finalPercentage}`;
+    };
+  </script>
+</body>
+</html>

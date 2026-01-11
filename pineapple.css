@@ -208,3 +208,121 @@ nav a{
     width: 100%;
     margin-top: 10px;
 }
+
+.sec5_cnt{
+    width: 98%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.trade{
+    width: 50%;
+    text-align: center;
+}
+
+.trade p{
+    font-size: 22px;
+    margin-top: -20px;
+}
+
+.trade img{
+    object-fit: cover;
+    object-position: top;   
+    height: 450px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.trade a{
+   font-size: 20px;
+}
+
+.card{
+    width: 50%;
+    text-align: center;
+    background: #fafafa;
+}
+
+.card p{
+    margin-top: -20px;
+    font-size: 22px;
+}
+
+.card a{
+    font-size: 20px;
+}
+
+.card img{
+    margin-top: 60px;
+    margin-left: 30px;
+    object-fit: cover;
+    object-position: left;
+    width: 550px;
+}
+
+.footer{
+    background: rgb(0, 28, 37);
+    margin-bottom: 0;
+    width: 96%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 2%;
+}
+
+.footer a{
+    color: rgb(74, 74, 255);
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: wavy underline;
+}
+
+/* pac shop */
+.pac_shop_main_cnt{
+    padding: 3% 1%;
+}
+
+.row_cnt{
+    width: 98%;
+    height: 200px;
+    padding: 1%;
+}
+
+.product{
+    width: 25%;
+    padding: 2%;
+    background: rgb(247, 247, 247);
+    border-radius: 10px;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.265);
+}
+
+.product img{
+    border-radius: 10px;
+}
+
+.product p{
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.product h3{
+    font-size: 22px;
+}
+
+.product img{
+    width: 100%;
+}
+
+.buy{
+    padding: 2% 4%;
+    background: rgb(51, 51, 255);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+

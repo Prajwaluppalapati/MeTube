@@ -1025,11 +1025,71 @@ body{
     width: 80%;
 }
 
-.checkbox{
-    color: white;
-    border: none;
-    height: 50px;
+.settings_main_cnt p{
+    align-items: center;
+    font-size: 22px;
+    color: rgb(183, 183, 183);
 }
+
+.checkbox{
+    border-radius: 1px;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: lighter;
+    margin-left: 30px;
+}
+
+.line{
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.checkdevice{
+    background: rgba(122, 122, 122, 0.507);
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(8, 0, 255, 0.664);
+    cursor: pointer;
+    color: rgb(66, 66, 255);
+    font-size: 18px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.checkdevice:hover{
+    background: rgba(188, 188, 188, 0.441);
+}
+
+.number{
+    background: rgba(168, 168, 168, 0.39);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 2px;
+    margin-left: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.281);
+    color: red;
+}
+
+.number:focus{
+    outline: none;
+    animation: shadowPulse 2s infinite;
+     font-weight: bold;
+}
+
+@keyframes shadowPulse {
+  0%, 100% {
+    box-shadow: 0 0 60px rgba(255, 0, 0, 0.15);
+    border: 2px solid rgba(255, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 60px rgb(255, 0, 0); 
+    border: 2px solid rgb(255, 0, 0);
+  }
+}
+
+
 
 
 

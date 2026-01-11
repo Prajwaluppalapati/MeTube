@@ -9,14 +9,14 @@ body{
 /** Top Navbar **/
 .topnav {
     overflow: hidden;
-    background-color: rgba(19, 19, 19, 0.886); /* must be transparent */
+    background-color: rgba(19, 19, 19, 0.886); 
     padding: 0px;
     display: flex;
     flex-direction: column;
     position: fixed;
-    backdrop-filter: blur(10px);   /* blur strength */
-    -webkit-backdrop-filter: blur(10px); /* for Safari */
-    width: 100%; /* optional */
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%; 
     z-index: 2;
 }
 
@@ -1087,6 +1087,46 @@ body{
     box-shadow: 0 0 60px rgb(255, 0, 0); 
     border: 2px solid rgb(255, 0, 0);
   }
+}
+
+.ads_cnt{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    background: rgba(172, 112, 72, 0.205);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ads_right_cnt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ads_right_top{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.ads_right_top img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.ads_right_top p{
+    margin-left: 0%;
+
+}
+
+.pineapple_description{
+    color: rgb(168, 168, 168);
+    margin-top: -10px;
+    font-size: 17px;
 }
 
 

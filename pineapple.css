@@ -282,12 +282,13 @@ nav a{
 }
 
 /* pac shop */
-.pac_shop_main_cnt{
+.shop_main_cnt{
     padding: 3% 1%;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-.pac_shop_main_cnt{
+.shop_main_cnt{
     font-size: 25px;    
 }
 

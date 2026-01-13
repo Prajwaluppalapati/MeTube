@@ -1,0 +1,54 @@
+body{
+    background: rgb(34, 34, 34);
+    font-family: monospace;
+    color: white;
+    text-align: center;
+}
+
+/* sec1 - 67 art */
+.sec1_1{
+    background: white;
+    width: 12%;
+    height: 50px;
+    position: absolute;
+    margin-left: 29%;
+    margin-top: 1%;
+}
+
+.sec1_2{
+     background: white;
+    width: 60px;
+    height: 400px;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.sec1_3{
+    background: white;
+    width: 10%;
+    height: 50px;
+    position: absolute;
+    margin-left: 29%;
+    margin-top: 28.3%;
+}
+
+.sec1_4{
+    background: white;
+    width: 60px;
+    height: 150px;
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 20.5%;
+}
+
+.sec1_5{
+    background: white;
+    width: 13.7%;
+    height: 50px;
+    position: absolute;
+    margin-left: 29%;
+    margin-top: 17%;
+}
+
+

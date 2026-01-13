@@ -9,7 +9,7 @@ body{
 /** Top Navbar **/
 .topnav {
     overflow: hidden;
-    background-color: rgba(19, 19, 19, 0.886); 
+    background-color: rgba(2, 70, 0, 0.772); 
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -102,6 +102,7 @@ body{
     font-size: 28px;
     margin-left: 10px;
     align-self: center;
+    animation: flicker 2s infinite;
 }
 
 .tm{
@@ -195,7 +196,7 @@ body{
     position: fixed;
     z-index: 2;
     left: 0;
-    background-color: #131313de;/*131313de*/
+    background-color: rgba(2, 70, 0, 0.772);
     overflow-x: hidden;
     transition: 0.5s;
     top: 60px;
@@ -260,6 +261,34 @@ body{
     }
 }
 
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes flicker {
+    0%, 85%, 100% {
+        text-shadow: none;
+        opacity: 1;
+    }
+    86%, 88% {
+        text-shadow: 0 0 8px #fff, 0 0 16px #00faff, 0 0 24px #00faff;
+        opacity: 0.9;
+    }
+    89%, 90% {
+        text-shadow: none;
+        opacity: 0.8;
+    }
+    91%, 94% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #00faff, 0 0 30px #00faff;
+        opacity: 1;
+    }
+}
+
 .web_info a{
     color: red;
 }
@@ -282,6 +311,7 @@ body{
     margin-top: 0;
     height: fit-content;
     transition: background 0.3s;
+      animation: float 0.5s infinite;
 }
 
 .videos{
@@ -329,7 +359,21 @@ body{
     margin: 0;
     display: flex;
     align-items: center;
+    padding-left: 95%;
     gap: 10px;
+    animation: slide 2s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0); /* Start position (off right) */
+  }
+  50% {
+    transform: translate(-100vw, 0); /* Move left by 100% of viewport width */
+  }
+  100% {
+    transform: translate(0, 0); /* Return to start position */
+  }
 }
 
 .shorts_icon{
@@ -357,6 +401,7 @@ body{
     flex-direction: column;
     gap: 5px;
     padding-bottom: 0px;
+    animation: pulse 1s infinite;
 }
 
 .shorts_cnt:hover{
@@ -367,6 +412,21 @@ body{
     width: 100%;
     height: 320px;
     border-radius: 10px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Start at original size */
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1); /* Scale up to 110% at the midpoint */
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+    opacity: 1;
+  }
 }
 
 .shorts_title{
@@ -393,7 +453,7 @@ body{
 }
 
 .end_h{
-    color: gray;
+    color: white;
     text-align: center;
 }
 
@@ -930,7 +990,27 @@ body{
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    animation: spin 0.2s infinite;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .channel_open_subscribe{
     background: white;

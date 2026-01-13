@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
-    background: #131313;
+    background: linear-gradient(135deg, red, black, purple, green, blue, pink);
 }
 
 /** Top Navbar **/
@@ -60,7 +60,7 @@ body{
 
 .lowernav span{
     color: white;
-    background: rgba(63, 63, 63, 0.719);
+    background: rgba(72, 255, 0, 0.719);
     border-radius: 10px;
     padding: 10px 16px;
     text-decoration: none;

@@ -1,0 +1,48 @@
+.spy_body{
+    background: rgb(32, 31, 31);
+    font-family: 'Roboto';
+}
+
+.row1{
+    width: 98%;
+    background: rgba(61, 61, 61, 0.452);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 1%;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.row1_items{
+    border: 2px solid rgba(255, 0, 0, 0.758);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 25%;
+    border-radius: 20px;   
+    text-align: center;
+    justify-items: center;
+    background: linear-gradient(135deg, rgba(73, 73, 73, 0.249), rgba(147, 147, 147, 0.194));
+    transition: scale 0.3s, background 0.2s; 
+    cursor: default;
+    overflow: hidden;
+}
+
+.row1_items:after{
+    background-image: 
+}
+
+.row1_items:hover{
+    background: linear-gradient(300deg, rgba(73, 73, 73, 0.249), rgba(147, 147, 147, 0.194));
+    scale: 1.05;
+}
+
+.row1_items p{
+    font-size: 20px;
+    background: red;
+    width: 50%;
+    padding: 2% 3%;
+    border-radius: 10px;
+}

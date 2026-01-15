@@ -51,4 +51,26 @@ body{
     margin-top: 17%;
 }
 
+.sec1_6{
+    background: white;
+    width: 15%;
+    height: 50px;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 0.8%;
+}
+
+.sec2_7{
+    background: white;
+    width: 100px;
+    height: 400px;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 0.8%;
+}
+
+.sec2{
+    margin-top: 700px;
+    text-align: left;
+}
 

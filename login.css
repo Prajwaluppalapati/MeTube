@@ -1,0 +1,56 @@
+.loginpage{
+    background: rgb(35, 35, 35);
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    color: white;
+    text-align: center;
+}
+
+.main_cnt{
+    width: 98%;
+    padding: 1%;
+    height: fit-content;
+    justify-items: center;
+}
+
+.sec1{
+    border: 2px solid rgba(192, 192, 192, 0.63);
+    width: 30%;
+    padding: 1% 1% 4% 2%;
+    text-align: left;
+    border-radius: 20px;
+    height: 260px;
+    margin-top: 10px;
+}
+
+.sec1 input{
+    height: 20px;
+    background: none;
+    border: 2px solid grey;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 85%;
+    color: rgb(222, 222, 222);
+}
+
+.sec1 a{
+    background: red;
+    text-decoration: none;
+    color: white;   
+    position: absolute;
+    width: 25.2%;
+    margin-top: 70px;    
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-left: -362px;
+    transition: background 0.2s;
+}
+
+.sec1 a:hover{
+    background: rgb(202, 0, 0);
+}

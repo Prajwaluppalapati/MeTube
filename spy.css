@@ -68,3 +68,15 @@
    color: rgb(215, 215, 215);
    margin-top: -10px;
 }
+
+.progress{
+    width: 1000px;
+    height: 40px;
+    border-radius: 0;
+    margin-bottom: 30px;
+    background: red;
+}
+
+.progress::-webkit-progress-value{
+  background: #22c55e;
+}
